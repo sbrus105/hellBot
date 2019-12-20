@@ -1,2 +1,2 @@
-# hellBot
-Bot for LH Hellraisers GroupMe
+# briskeybot
+Produced by Sam Brus and Jake Klovenski
