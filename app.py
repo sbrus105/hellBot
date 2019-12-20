@@ -18,8 +18,13 @@ def webhook():
   data = request.get_json()
   log('Received {}'.format(data))
   if data['name'] != 'hellBot':                       #not message from self
-    if re.search('gbq', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
-        msg = "It's Jacob."
+
+    if re.search('OU sucks', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+        msg = "OU sux!"
+        send_message(msg)
+
+    if re.search('OU sux', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+        msg = "OU sux!"
         send_message(msg)
 
   return "ok", 200  #send all applicable messages
