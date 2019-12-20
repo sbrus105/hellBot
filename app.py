@@ -17,7 +17,7 @@ app = Flask(__name__) #dont touch
 def webhook():
   data = request.get_json()
   log('Received {}'.format(data))
-  if data['name'] != 'briskeybot':                       #not message from self
+  if data['name'] != 'hellBot':                       #not message from self
     if re.search('gbq', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
         msg = "It's Jacob."
         send_message(msg)
