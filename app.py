@@ -32,6 +32,8 @@ def webhook():
 
 
 def send_message(msg):
+    from time import sleep
+    sleep(0.05)
     url  = 'https://api.groupme.com/v3/bots/post'
   
     #f841583c50c73aa774df650ffd  	LHH Chat
