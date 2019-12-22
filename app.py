@@ -20,11 +20,7 @@ def webhook():
   log('Received {}'.format(data))
   if data['name'] != 'hellBot':                       #not message from self
 
-    if re.search('OU sucks', data['text'], re.IGNORECASE):
-        msg = "OU sux!"
-        send_message(msg)
-
-    if re.search('OU sux', data['text'], re.IGNORECASE): 
+    if re.search('OU ', data['text'], re.IGNORECASE):
         msg = "OU sux!"
         send_message(msg)
 
@@ -54,7 +50,7 @@ def webhook():
 
     if re.search('!hellBot', data['text'], re.IGNORECASE):
         msg = "Hello, I am a GroupMe chat bot developed by Sam Brus. Please keep in mind that Sam is unfamiliar with the" \
-              "bastard language known as Python so development will be slow and somewhat buggy."
+              " bastard language known as Python so development will be slow and somewhat buggy."
         send_message(msg)
 
 
