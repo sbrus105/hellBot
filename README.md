@@ -1,2 +1,2 @@
-# briskeybot
-Produced by Sam Brus and Jake Klovenski
+# hellBot
+Produced by Sam Brus
