@@ -19,19 +19,19 @@ def webhook():
   log('Received {}'.format(data))
   if data['name'] != 'hellBot':                       #not message from self
 
-    if re.search('OU sucks', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+    if re.search('OU sucks', data['text'], re.IGNORECASE):
         msg = "OU sux!"
         send_message(msg)
 
-    if re.search('OU sux', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+    if re.search('OU sux', data['text'], re.IGNORECASE): 
         msg = "OU sux!"
         send_message(msg)
 
-    if re.search('420', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+    if re.search('420', data['text'], re.IGNORECASE):    
         msg = "Blaze it"
         send_message(msg)
 
-    if re.search(' 69 ', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+    if re.search(' 69 ', data['text'], re.IGNORECASE):
         msg = "Nice."
         send_message(msg)
 
