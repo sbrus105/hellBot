@@ -27,6 +27,15 @@ def webhook():
         msg = "OU sux!"
         send_message(msg)
 
+    if re.search('420', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+        msg = "Blaze it"
+        send_message(msg)
+
+    if re.search(' 69 ', data['text'], re.IGNORECASE):    #It's Jacob If                #The meat
+        msg = "Nice."
+        send_message(msg)
+
+
   return "ok", 200  #send all applicable messages
 
 
