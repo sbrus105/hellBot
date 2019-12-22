@@ -36,6 +36,27 @@ def webhook():
         msg = "Nice."
         send_message(msg)
 
+    if re.search('tequila', data['text'], re.IGNORECASE):
+        msg = "If you're going to drink tequila, at least make it good tequila."
+        send_message(msg)
+
+    if re.search('everclear', data['text'], re.IGNORECASE):
+        msg = "Nothing good ever came out of a night that involved Everclear, remember that."
+        send_message(msg)
+
+    if re.search('!sam', data['text'], re.IGNORECASE):
+        msg = "712 Graham Place, apt 303, Austin TX 78705. Looks like a motel"
+        send_message(msg)
+
+    if re.search('!tailgate', data['text'], re.IGNORECASE):
+        msg = "Orange Tree Condos, across Rio Grande from Graham Place."
+        send_message(msg)
+
+    if re.search('!hellBot', data['text'], re.IGNORECASE):
+        msg = "Hello, I am a GroupMe chat bot developed by Sam Brus. Please keep in mind that Sam is unfamiliar with the" \
+              "bastard language known as Python so development will be slow and somewhat buggy."
+        send_message(msg)
+
 
   return "ok", 200  #send all applicable messages
 
