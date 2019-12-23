@@ -21,7 +21,7 @@ def webhook(): #message analysis logic should go here, not familiar with python,
 
   if data['name'] != 'hellBot':#not message from self
 
-    if data['text'].contains("OU "):                                                                  #OU
+    if data['text'].contains("OU"):                                                                  #OU
         msg = "OU sux!"
         send_message(msg)
 
