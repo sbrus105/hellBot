@@ -15,12 +15,13 @@ app = Flask(__name__) #dont touch
 
 
 
-def webhook():
+def webhook(): #message analysis logic should go here, not familiar with python, so I'm not certain if data is kept from call to call
   data = request.get_json()
   log('Received {}'.format(data))
-  if data['name'] != 'hellBot':                       #not message from self
 
-    if re.search('OU ', data['text'], re.IGNORECASE):                                                                      #OU
+  if data['name'] != 'hellBot':#not message from self
+
+    if data['text'].contains("OU "):                                                                  #OU
         msg = "OU sux!"
         send_message(msg)
 
@@ -49,7 +50,7 @@ def webhook():
         send_message(msg)
 
     if re.search('!hellBot', data['text'], re.IGNORECASE):
-        msg = "Hello, I am a GroupMe chat bot developed by Sam Brus. Please keep in mind that Sam is unfamiliar with the" \
+        msg = "Hello, I am a GroupMe chat bot developed by Sam Brus and Harrison Berrier. Please keep in mind that Sam is unfamiliar with the" \
               " bastard language known as Python so development will be slow and somewhat buggy."                          #!hellBot
         send_message(msg)
 
