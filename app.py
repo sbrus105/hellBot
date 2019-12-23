@@ -20,37 +20,69 @@ def webhook():
   log('Received {}'.format(data))
   if data['name'] != 'hellBot':                       #not message from self
 
-    if re.search('OU ', data['text'], re.IGNORECASE):
+    if re.search('OU ', data['text'], re.IGNORECASE):                                                                      #OU
         msg = "OU sux!"
         send_message(msg)
 
-    if re.search('420', data['text'], re.IGNORECASE):    
+    if re.search('420', data['text'], re.IGNORECASE):                                                                      #420
         msg = "Blaze it"
         send_message(msg)
 
-    if re.search(' 69 ', data['text'], re.IGNORECASE):
+    if re.search(' 69 ', data['text'], re.IGNORECASE):                                                                      #69
         msg = "Nice."
         send_message(msg)
 
     if re.search('tequila', data['text'], re.IGNORECASE):
-        msg = "If you're going to drink tequila, at least make it good tequila."
+        msg = "If you're going to drink tequila, at least make it good tequila."                                            #tequila
         send_message(msg)
 
     if re.search('everclear', data['text'], re.IGNORECASE):
-        msg = "Nothing good ever came out of a night that involved Everclear, remember that."
+        msg = "Nothing good ever came out of a night that involved Everclear, remember that."                               #everclear
         send_message(msg)
 
     if re.search('!sam', data['text'], re.IGNORECASE):
-        msg = "712 Graham Place, apt 303, Austin TX 78705. Looks like a motel"
+        msg = "712 Graham Place, apt 303, Austin TX 78705. Looks like a motel"                                              #!sam
         send_message(msg)
 
     if re.search('!tailgate', data['text'], re.IGNORECASE):
-        msg = "Orange Tree Condos, across Rio Grande from Graham Place."
+        msg = "Orange Tree Condos, across Rio Grande from Graham Place."                                                    #!tailgate
         send_message(msg)
 
     if re.search('!hellBot', data['text'], re.IGNORECASE):
         msg = "Hello, I am a GroupMe chat bot developed by Sam Brus. Please keep in mind that Sam is unfamiliar with the" \
-              " bastard language known as Python so development will be slow and somewhat buggy."
+              " bastard language known as Python so development will be slow and somewhat buggy."                          #!hellBot
+        send_message(msg)
+
+    if re.search('!schedule', data['text'], re.IGNORECASE):                                                                #!schedule
+        msg = "WIP"
+        send_message(msg)
+
+    if re.search('Sigma Pi', data['text'], re.IGNORECASE):                                                               #Sigma Pi
+        msg = "ROLL PI BABY!"
+        send_message(msg)
+
+    if re.search('Boogachiga boogachiga', data['text'], re.IGNORECASE):                                                  #boogachiga
+        msg = "FDH!"
+        send_message(msg)
+
+    if re.search('FDH FDH', data['text'], re.IGNORECASE):                                                                #FDH
+        msg = "F!D!H!"
+        send_message(msg)
+
+    if re.search('Baylor', data['text'], re.IGNORECASE):                                                                 #baylor
+        msg = "2 - 4 - 6 - 8 - 10, Baylor Women look like men!"
+        send_message(msg)
+
+    if re.search('aggie', data['text'], re.IGNORECASE):                                                                  #aggie
+        msg = "Sheep Fuckers"
+        send_message(msg)
+
+    if re.search('A&M', data['text'], re.IGNORECASE):                                                                    #A&M
+        msg = "Sheep Fuckers"
+        send_message(msg)
+
+    if re.search('TAMU', data['text'], re.IGNORECASE):                                                                   #TAMU
+        msg = "Sheep Fuckers"
         send_message(msg)
 
 
