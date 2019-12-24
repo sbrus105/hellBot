@@ -86,6 +86,14 @@ def webhook(): #message analysis logic should go here, not familiar with python,
         msg = "Sheep Fuckers"
         send_message(msg)
 
+    if re.search('removed Sam Brus from the group.', data['text'], re.IGNORECASE):                                       #Try me
+        msg = "You're a huge bitch for that, " + data['text'].split(' ', 1)[0]
+        send_message(msg)
+
+    if re.search('added Sam Brus from the group.', data['text'], re.IGNORECASE):                                       #Try me
+        msg = "Shoutout for being a real one, " + data['text'].split(' ', 1)[0]
+        send_message(msg)
+
 
   return "ok", 200  #send all applicable messages
 
